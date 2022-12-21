@@ -37,7 +37,7 @@ Response:
 }
 ```
 ### Create User
-This endpoint creates a user given the information.
+This endpoint creates a user given the information.  
 Send a `POST` request to `/users`:
 ```sh
 curl -X POST 'http://127.0.0.1:8000/users' -H "Content-Type: application/json" -d '{"name": "Bob", "email": "bob@gmail.com", "password": "secure"}'
