@@ -41,11 +41,8 @@ func (r Repository) UpdateUser(in User) (User, error) {
 	if !ok {
 		return User{}, ErrUserNotFound
 	}
-	if in.FirstName != "" {
-		user.FirstName = in.FirstName
-	}
-	if in.LastName != "" {
-		user.LastName = in.LastName
+	if in.Name != "" {
+		user.Name = in.Name
 	}
 	if in.Password != "" {
 		user.Password = in.Password
